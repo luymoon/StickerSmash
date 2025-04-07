@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Modal, Pressable } from 'react-native'
-import { Children, PropsWithChildren } from 'react'
+import { PropsWithChildren } from 'react'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons'
 
 type Props = PropsWithChildren<{
@@ -7,7 +7,7 @@ type Props = PropsWithChildren<{
     onClose: () => void;
 }>;
 
-export default function EmojiPicker({ isVisible, children, onClose}: Props) {
+export default function EmojiPicker({ isVisible, children, onClose }: Props) {
   return (
     <View>
       <Modal animationType='slide' transparent={true} visible={isVisible}>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius: 18,
         borderTopLeftRadius: 18,
         position: 'absolute',
-        bottom: 0
+        bottom: 0,
     },
     titleContainer: {
         height: '16%',
@@ -48,6 +48,5 @@ const styles = StyleSheet.create({
     title: {
         color: '#fff',
         fontSize: 16,
-
     }
 })
