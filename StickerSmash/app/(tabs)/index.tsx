@@ -12,7 +12,7 @@ import EmojiSticker from "@/components/EmojiSticker";
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as MediaLibrary from 'expo-media-library';
 import { captureRef } from 'react-native-view-shot';
-import domtoimage from 'dom-to-image'
+import domtoimage from 'dom-to-image';
 
 const PlaceholderImage = require("@/assets/images/background-image.png");
 
@@ -96,7 +96,7 @@ export default function Index() {
             />
             {
               pickedEmoji &&
-              <EmojiSticker imageSize={40} stickerSource={pickedEmoji} />
+              <EmojiSticker imageSize={70} stickerSource={pickedEmoji} />
             }
           </View>
         </View>

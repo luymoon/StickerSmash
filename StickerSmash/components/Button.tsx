@@ -12,7 +12,7 @@ export default function Button({ label, theme, onPress }: Props) {
     if (theme === 'primary') {
         return (
             <View style={[styles.buttonContainer,
-            { borderWidth: 4, borderColor: ' #564073', borderRadius: 18 }
+            { borderWidth: 4, borderColor: 'rgb(123, 85, 172)', borderRadius: 18 }
             ]}
             >
                 <Pressable style={[styles.button, { backgroundColor: '#fff' }]} onPress={onPress}
