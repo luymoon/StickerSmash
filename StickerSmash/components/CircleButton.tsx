@@ -9,7 +9,7 @@ export default function CircleButton({ onPress }: Props){
   return (
     <View style={styles.CircleButtonContainer}>
         <Pressable style={styles.CircleButton} onPress={onPress}>
-            <MaterialIcons name="add" size={38} color='25292e' />
+            <MaterialIcons name="add" size={38} color='#fff' />
         </Pressable>
       </View>
   )
@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         height: 84,
         marginHorizontal: 60,
         borderWidth: 4,
-        borderColor: "#ffd33d",
+        borderColor: "#5232a8",
         borderRadius: 42,
         padding: 3,
     },
